@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(228, 100%, 98%);
+}
+
+body .main {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-container {
+    width: 350px;
+    height: 610px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px 10px hsl(225, 100%, 94%);
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 40px;
+}
+
+.card-img{
+    width: 100%;
+    height: 36%;
+}
+
+.image{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.order-description {
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 1.5;
+}
+
+.heading {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.summary {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    padding: 10px;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(228, 100%, 98%);
+    margin: 3px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 85.71%;
+    border-radius: 10px;
+}
+
+.music-icon {
+    margin-right: auto;
+}
+
+.plan-inner {
+    margin-right: auto;
+}
+
+.plan-inner > h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.plan-inner > p{
+    color: hsl(224, 23%, 55%);
+}
+
+.plan > a {
+    font-weight: 700;
+}
+
+.plan > a:hover, .plan > a:active {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+}
+
+a > .order-button {
+    text-decoration: none;
+    margin: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: #ffffff;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    border: none;
+    box-shadow: 0 8px 15px hsl(224, 23%, 55%);    
+}
+
+a > .order-button:hover, a > .order-button:active {
+    background-color: hsl(224, 47%, 55%);
+}
+
+.cancel {
+    text-align: center;
+    margin: 10px;
+}
+
+.cancel-order {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.cancel-order:hover, .cancel-order:active {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 500px) {
+    .wave {
+        display: none;
+    }
+    .wave-mobile {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media  screen and (min-width : 500px) {
+    .wave-mobile {
+        display: none;
+    }
+}
